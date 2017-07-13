@@ -1,0 +1,61 @@
+.nombler-logo
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 600%;
+  color: white;
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.overlay-desc {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description {
+    font-family: 'Helvetica Neue';
+    color: white;
+    font-size: 120%;
+    text-align: center;
+}
+.actions {
+    text-align: center;
+}
+.btn-transparent {
+    background-color: transparent;
+    border-color: white;
+    font-family: 'Helvetica Neue';
+    color: white;
+    margin: auto;
+}
+.btn-transparent:hover {
+    border-color: lightblue;
+    color: lightblue;
+}
