@@ -1,1 +1,150 @@
-!function(i){function t(n){if(e[n])return e[n].exports;var o=e[n]={i:n,l:!1,exports:{}};return i[n].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var e={};t.m=i,t.c=e,t.i=function(i){return i},t.d=function(i,e,n){t.o(i,e)||Object.defineProperty(i,e,{configurable:!1,enumerable:!0,get:n})},t.n=function(i){var e=i&&i.__esModule?function(){return i.default}:function(){return i};return t.d(e,"a",e),e},t.o=function(i,t){return Object.prototype.hasOwnProperty.call(i,t)},t.p="",t(t.s=507)}({507:function(i,t,e){"use strict";function n(){var i=$(window).height()+5,t=parseInt(i)+"px";$(".homepage-hero-module").css("height",t)}function o(i){$(i).each(function(){$(this).data("height",$(this).height()),$(this).data("width",$(this).width())}),r(i)}function r(i){var t,e,n=$(window).width(),o=$(window).height()+5;$(i).each(function(){var i=$(this).data("height")/$(this).data("width");$(this).width(n),n<1e3&&(e=o,t=e/i,$(this).css({"margin-top":0,"margin-left":-(t-n)/2+"px"}),$(this).width(t).height(e)),$(".homepage-hero-module .video-container video").addClass("fadeIn animated")})}function a(){var i="og2pgYODROAL2E5q2ytjfPJyDzkiUd74";window.location.href.includes("nombler.com")&&(i="U00ii8t8V0KQ69Wh2ycdjj0oZa39zdj0");var t=new auth0.WebAuth({domain:"nombler.auth0.com",clientID:i});$("#login").click(function(i){t.authorize({audience:"https://nombler.auth0.com/userinfo",scope:"openid",responseType:"code",redirectUri:window.location.origin+"/auth0-login"})})}$(document).ready(function(){n(),o(".video-container .poster img"),o(".video-container .filter"),o(".video-container video"),$(window).on("resize",function(){n(),r(".video-container .poster img"),r(".video-container .filter"),r(".video-container video")}),a()})}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 507);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 507:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$(document).ready(function () {
+    scaleVideoContainer();
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+    $(window).on('resize', function () {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize('.video-container .filter');
+        scaleBannerVideoSize('.video-container video');
+    });
+    setupAuth0();
+});
+
+function scaleVideoContainer() {
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height', unitHeight);
+}
+
+function initBannerVideoSize(element) {
+    $(element).each(function () {
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+}
+
+function scaleBannerVideoSize(element) {
+    var windowWidth = $(window).width(),
+        windowHeight = $(window).height() + 5,
+        videoWidth,
+        videoHeight;
+
+    $(element).each(function () {
+        var videoAspectRatio = $(this).data('height') / $(this).data('width');
+        $(this).width(windowWidth);
+        if (windowWidth < 1000) {
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({ 'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px' });
+            $(this).width(videoWidth).height(videoHeight);
+        }
+
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+    });
+}
+
+function setupAuth0() {
+    var clientID = 'og2pgYODROAL2E5q2ytjfPJyDzkiUd74';
+    var isProduction = window.location.href.includes('nombler.com');
+    if (isProduction) {
+        clientID = 'U00ii8t8V0KQ69Wh2ycdjj0oZa39zdj0';
+    }
+
+    var auth = new auth0.WebAuth({
+        domain: 'nombler.auth0.com',
+        clientID: clientID
+    });
+
+    $('#login').click(function (e) {
+        auth.authorize({
+            audience: 'https://' + 'nombler.auth0.com' + '/userinfo',
+            scope: 'openid',
+            responseType: 'code',
+            redirectUri: window.location.origin + '/auth0-login'
+        });
+    });
+}
+
+/***/ })
+
+/******/ });
