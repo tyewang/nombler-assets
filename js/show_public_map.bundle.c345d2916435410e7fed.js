@@ -74,76 +74,87 @@
 "use strict";
 
 
-$(document).ready(function () {
-    scaleVideoContainer();
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video');
-    $(window).on('resize', function () {
-        scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
-        scaleBannerVideoSize('.video-container .filter');
-        scaleBannerVideoSize('.video-container video');
-    });
-    setupAuth0();
+var EateryLists = React.createClass({
+  displayName: 'EateryLists',
+
+  render: function render() {
+    return renderEateryLists(this.props.eatery_lists);
+  }
 });
 
-function scaleVideoContainer() {
-    var height = $(window).height() + 5;
-    var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height', unitHeight);
-}
+var EateryListHeader = React.createClass({
+  displayName: 'EateryListHeader',
 
-function initBannerVideoSize(element) {
-    $(element).each(function () {
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
+  render: function render() {
+    return React.createElement(
+      'div',
+      { className: 'row' },
+      React.createElement(
+        'div',
+        { className: 'col-lg-8' },
+        React.createElement(
+          'h4',
+          null,
+          this.props.eatery_list.name
+        )
+      )
+    );
+  }
+});
 
-    scaleBannerVideoSize(element);
-}
+var Eatery = React.createClass({
+  displayName: 'Eatery',
 
-function scaleBannerVideoSize(element) {
-    var windowWidth = $(window).width(),
-        windowHeight = $(window).height() + 5,
-        videoWidth,
-        videoHeight;
+  render: function render() {
+    return React.createElement(
+      'li',
+      null,
+      React.createElement(
+        'a',
+        { href: '#', 'data-toggle': 'tooltip' },
+        this.props.eatery.name
+      )
+    );
+  }
+});
 
-    $(element).each(function () {
-        var videoAspectRatio = $(this).data('height') / $(this).data('width');
-        $(this).width(windowWidth);
-        if (windowWidth < 1000) {
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({ 'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px' });
-            $(this).width(videoWidth).height(videoHeight);
-        }
+var renderEateryLists = function renderEateryLists(eatery_lists) {
+  var eatery_listRows = [];
+  while (eatery_lists.length > 0) {
+    var eatery_listRow = renderEateryListRow(eatery_lists.splice(0, 3));
+    eatery_listRows.push(React.createElement(
+      'div',
+      { className: 'row equal-height-row eatery_lists-row', key: eatery_lists.length },
+      eatery_listRow
+    ));
+  }
+  return React.createElement(
+    'div',
+    null,
+    eatery_listRows
+  );
+};
 
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-    });
-}
-
-function setupAuth0() {
-    var clientID = 'og2pgYODROAL2E5q2ytjfPJyDzkiUd74';
-    var isProduction = window.location.href.includes('nombler.com');
-    if (isProduction) {
-        clientID = 'U00ii8t8V0KQ69Wh2ycdjj0oZa39zdj0';
-    }
-
-    var auth = new auth0.WebAuth({
-        domain: 'nombler.auth0.com',
-        clientID: clientID
-    });
-
-    $('#login').click(function (e) {
-        auth.authorize({
-            audience: 'https://' + 'nombler.auth0.com' + '/userinfo',
-            scope: 'openid',
-            responseType: 'code',
-            redirectUri: window.location.origin + '/auth0-login'
-        });
-    });
-}
+var renderEateryListRow = function renderEateryListRow(eatery_lists) {
+  return $.map(eatery_lists, function (eatery_list) {
+    return React.createElement(
+      'div',
+      { className: 'col-lg-4 eatery_list-container', key: eatery_list.public_id },
+      React.createElement(
+        'div',
+        { className: 'well well-sm clearfix equal-height' },
+        React.createElement(EateryListHeader, { eatery_list: eatery_list }),
+        React.createElement(
+          'ul',
+          null,
+          $.map(eatery_list.eateries, function (eatery) {
+            return React.createElement(Eatery, { eatery: eatery, key: eatery_list.public_id + '-' + eatery.public_id });
+          })
+        )
+      )
+    );
+  });
+};
 
 /***/ })
 
