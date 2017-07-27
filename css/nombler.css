@@ -1,8 +1,11 @@
-body {
+body
+{
   font-family: 'Lato', sans-serif;
+  background-image: url("/nombler-public/img/retina_wood_@2X.png");
 }
 
-h1 {
+h1
+{
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -37,10 +40,6 @@ a.logo:active
 {
   width:100%;
   height:100%;
-}
-
-body {
-  background-image: url("/nombler-public/img/retina_wood_@2X.png");
 }
 
 .well
