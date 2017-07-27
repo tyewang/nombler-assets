@@ -1,3 +1,11 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
 .nombler-logo
 {
   font-family: 'Pacifico', cursive;
