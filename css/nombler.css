@@ -9,6 +9,11 @@ h1
   font-family: 'Fira Sans', sans-serif;
 }
 
+.page-header
+{
+  margin-top: 0;
+}
+
 .nombler-logo
 {
   font-family: 'Pacifico', cursive;
