@@ -8,6 +8,11 @@
 .map-description
 {
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 1.2em;
   margin-bottom: 2%;
+}
+
+.eatery-list-name
+{
+  font-weight: bolder;
 }
