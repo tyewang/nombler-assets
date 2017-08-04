@@ -16,3 +16,19 @@
 {
   font-weight: bolder;
 }
+
+.gm-style-iw div
+{
+  width: 28em;
+}
+
+.gm-style-iw *
+{
+  font-family: 'Lato', sans-serif;
+}
+
+.gm-style-iw h5
+{
+  font-weight: bold;
+  font-size: 1.2em;
+}
