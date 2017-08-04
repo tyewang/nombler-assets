@@ -19,7 +19,7 @@
 
 .gm-style-iw div
 {
-  width: 28em;
+  max-width: 28em;
 }
 
 .gm-style-iw *
