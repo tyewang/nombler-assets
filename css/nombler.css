@@ -89,3 +89,7 @@ a.logo:active
 .edit-clicked {
   color: darkgreen;
 }
+
+.jumbotron {
+  background-color: rgba(245, 245, 245, 0.4);
+}
