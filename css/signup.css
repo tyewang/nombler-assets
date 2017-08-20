@@ -27,8 +27,9 @@
 .footnote button {
     font-family: 'Lato';
     color: white;
-    font-size: 50%;
+    font-size: 60%;
     text-decoration: underline;
+    padding: 0
 }
 .well {
   border-color: rgba(0, 0, 0, 0.5);
