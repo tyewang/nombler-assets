@@ -93,3 +93,25 @@ a.logo:active
 .jumbotron {
   background-color: rgba(245, 245, 245, 0.4);
 }
+
+@keyframes confetti {
+  from {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+@keyframes hearts {
+  0% {
+      opacity: 0;
+      transform:translate(0, 0%);
+   }
+   20% {
+      opacity: 0.8;
+      transform:translate(0, -20%);
+   }
+   100% {
+      opacity: 0;
+      transform:translate(0, -1000%);
+   }
+}
