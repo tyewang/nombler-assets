@@ -161,5 +161,6 @@ a.logo:active
   }
 	#edit-map-controls {
     float: none !important;
+    margin-bottom: 10px;
 	}
 }
