@@ -23,6 +23,14 @@ h1
   font-size: 5em;
 }
 
+@media (max-width: 768px) {
+  .nombler-logo
+  {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+  }
+}
+
 a.logo:link
 {
  color: #317eac;
