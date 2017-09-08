@@ -5,7 +5,7 @@
 }
 .video-container {
     position: relative;
-    bottom: 0%;
+    top: 0%;
     left: 0%;
     height: 100%;
     width: 100%;
@@ -14,13 +14,13 @@
 }
 .video-container .poster img {
     width: 100%;
-    bottom: 0;
+    top: 0;
     position: absolute;
 }
 .video-container video {
     position: absolute;
     z-index: 0;
-    bottom: 0;
+    top: 0;
 }
 .video-container video.fillWidth {
     width: 100%;
