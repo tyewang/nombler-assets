@@ -199,9 +199,35 @@ a.logo:active
 
 .eatery-list-container li:hover {
   background-color: rgba(0, 0, 0, 0.05);
+
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
+}
+
+.eatery-list-container li:hover:before {
+  float: left;
+  margin-left: -1.3em;
+  width: 1em;
+  font-family: sans-serif;
+  display: inline-block;
+  line-height: .36em;
+  margin-top: -.1em;
+  letter-spacing: 2px;
+  color: #cccccc;
+  content: '.. .. ..';
+}
+
+.eatery-list-container li:hover:after {
+  float: right;
+  width: 1em;
+  font-family: sans-serif;
+  display: inline-block;
+  line-height: .36em;
+  margin-top: -.1em;
+  letter-spacing: 2px;
+  color: #cccccc;
+  content: '.. .. ..';
 }
 
 .eatery-list-container li a:hover {
