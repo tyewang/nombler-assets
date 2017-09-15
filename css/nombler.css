@@ -185,3 +185,25 @@ a.logo:active
 .eatery-list-container .well.filtered-out:hover {
   opacity: 1;
 }
+
+.eatery-list-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.eatery-list-container li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1.5em;
+}
+
+.eatery-list-container li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.eatery-list-container li a:hover {
+  cursor: pointer;
+}
