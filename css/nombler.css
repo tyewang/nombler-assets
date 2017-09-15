@@ -207,3 +207,9 @@ a.logo:active
 .eatery-list-container li a:hover {
   cursor: pointer;
 }
+
+.eatery-list-container li:active{
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
