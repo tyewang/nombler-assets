@@ -252,13 +252,14 @@ a.logo:active
   height: 3em;
   border-radius: 50%;
   background-color: #ea4b4b;
-	transition: width 0.4s, border-radius 0.4s, background 0.4s, box-shadow 0.4s;
+	transition: height 0.4s, width 0.4s, border-radius 0.4s step-end;
   overflow: hidden;
 }
 
 .trash:hover {
 	width: 15em;
   border-radius: 2em;
+	transition: height 0.4s, width 0.4s, border-radius 0.4s step-start;
 }
 
 .trash:hover i {
@@ -271,14 +272,12 @@ a.logo:active
 
 .trash i {
 	color: white;
-  margin-top: 1px;
   height: 100%;
   width: 100%;
   font-size: 2em;
   display: inline-block;
-  width: 100%;
   text-align: center;
-  line-height: inherit;
+  line-height: 1.5em; /* because font size is doubled */
 }
 
 .trash p {
@@ -289,4 +288,23 @@ a.logo:active
   display: hidden;
   height: 100%;
   width: 100%;
+}
+
+.trash.item-hovering {
+  background-color: #e01a1a;
+  height: 3.5em;
+  width: 3.5em;
+	transition: height 0.4s, width 0.4s;
+}
+
+.trash.item-hovering i {
+  line-height: 1.75em;
+}
+
+#real-trash {
+  z-index: 10;
+}
+
+#fake-trash {
+  z-index: 9;
 }
