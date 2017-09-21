@@ -312,4 +312,20 @@ a.logo:active
 .trash.item-hovering i {
   line-height: 2.5em;
 	transition: line-height 0.2s;
+  animation: shake 0.15s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
