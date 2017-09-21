@@ -246,13 +246,15 @@ a.logo:active
 
 .trash {
   position: fixed;
-  bottom: 1em;
-  right: 1em;
+  bottom: 2em;
+  right: 2em;
+  margin-bottom: -1.5em;
+  margin-right: -1.5em;
   width: 3em;
   height: 3em;
   border-radius: 50%;
   background-color: #ea4b4b;
-	transition: height 0.4s, width 0.4s, border-radius 0.4s step-end;
+	transition: height 0.4s, width 0.4s, border-radius 0.4s step-end, margin 0.4s, box-shadow 0.4s;
   overflow: hidden;
 }
 
@@ -278,6 +280,7 @@ a.logo:active
   display: inline-block;
   text-align: center;
   line-height: 1.5em; /* because font size is doubled */
+	transition: line-height 0.2s;
 }
 
 .trash p {
@@ -290,21 +293,31 @@ a.logo:active
   width: 100%;
 }
 
+.trash.is-dragging{
+  height: 4em;
+  width: 4em;
+  margin-bottom: -2em;
+  margin-right: -2em;
+  box-shadow: 0 0 0 2em rgba(234,75,75, 0.5);
+	transition: height 0.2s, width 0.2s, box-shadow 0.2s, margin 0.2s;
+}
+
+.trash.is-dragging i {
+  line-height: 2em;
+	transition: line-height 0.2s;
+}
+
 .trash.item-hovering {
   background-color: #e01a1a;
-  height: 3.5em;
-  width: 3.5em;
-	transition: height 0.4s, width 0.4s;
+  box-shadow: 0 0 0 1em rgba(234,75,75, 0.5);
+  height: 5em;
+  width: 5em;
+  margin-bottom: -2.5em;
+  margin-right: -2.5em;
+	transition: height 0.2s, width 0.2s, box-shadow 0.2s, margin 0.2s;
 }
 
 .trash.item-hovering i {
-  line-height: 1.75em;
-}
-
-#real-trash {
-  z-index: 10;
-}
-
-#fake-trash {
-  z-index: 9;
+  line-height: 2.5em;
+	transition: line-height 0.2s;
 }
