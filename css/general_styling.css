@@ -1,0 +1,52 @@
+body
+{
+  font-family: 'Lato', sans-serif;
+  background-image: url("/nombler-public/img/retina_wood_@2X.png");
+}
+
+h1
+{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.page-header
+{
+  margin-top: 0;
+  padding-bottom: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.nombler-logo
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+}
+
+a.logo:link
+{
+ color: #317eac;
+ text-decoration:none;
+}
+a.logo:visited
+{
+ color: #317eac;
+ text-decoration:none;
+}
+a.logo:hover
+{
+ color: #317eac;
+ text-decoration:none;
+}
+a.logo:active
+{
+ color: #317eac;
+ text-decoration:none;
+}
+
+@media (max-width: 768px) {
+  .nombler-logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+  }
+}
