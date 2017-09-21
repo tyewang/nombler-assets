@@ -69,17 +69,9 @@ a.logo:active
 
 .pac-container { z-index: 1051; } /* Allows Google Places Autocomplete selector to show up in a modal*/
 
-.glyphicon-remove, .glyphicon-edit { /* Adjust delete icon to correct height */
-  vertical-align: -5%;
+.glyphicon-edit {
+  vertical-align: -5%; /* Adjust icon to correct height */
   color: lightgray;
-}
-
-.remove-hover {
-  color: red;
-}
-
-.remove-clicked {
-  color: maroon;
 }
 
 .edit-hover {
