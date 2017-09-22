@@ -97,6 +97,8 @@
   content: '.. .. ..'; }
 .eatery-list-container li a:hover {
   cursor: pointer; }
+.eatery-list-container li span:hover {
+  cursor: pointer; }
 .eatery-list-container li:active {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
