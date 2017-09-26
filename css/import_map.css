@@ -1,0 +1,28 @@
+ul {
+  margin-bottom: 0;
+}
+
+input {
+  border-width: 0;
+  border-radius: 4px;
+}
+
+.well {
+  background-color: rgba(245, 245, 245, 0.7);
+}
+
+#google-import-link {
+  display: inline-block;
+  font-weight: bolder;
+  padding-bottom: 1em;
+}
+
+#download-link {
+  display: none;
+}
+
+.error {
+  border-width: 2px;
+  border-color: red;
+  border-style: solid;
+}
