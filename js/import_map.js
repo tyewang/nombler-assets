@@ -5,7 +5,7 @@
         $('#submit').attr('disabled', false);
       }
     });
-    $("#map-url").change(function() {
+    $("#map-url").keyup(function() {
       $(this).removeClass('error');
       const regexResult = this.value.match(/^https:.*google\.com.*?.*id=([A-Za-z0-9_-]+)/);
       if(regexResult) {
