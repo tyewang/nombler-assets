@@ -173,5 +173,7 @@
     transform: rotate(-7deg); }
   100% {
     transform: rotate(0deg); } }
+#sharing-collapse {
+  margin-top: 1em; }
 
 /*# sourceMappingURL=edit_map.css.map */
