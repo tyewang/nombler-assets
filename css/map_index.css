@@ -50,6 +50,10 @@
       display: block; }
 
 @media (max-width: 768px) {
+  #controls {
+    float: none !important;
+    margin-bottom: 10px; }
+
   #maps-container {
     width: 100%;
     margin-left: 0; }
