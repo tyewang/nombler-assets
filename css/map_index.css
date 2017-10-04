@@ -49,4 +49,16 @@
       width: 100%;
       display: block; }
 
+@media (max-width: 768px) {
+  #maps-container {
+    width: 100%;
+    margin-left: 0; }
+
+  .map-item {
+    color: inherit;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; } }
+
 /*# sourceMappingURL=map_index.css.map */
