@@ -28,4 +28,20 @@
   padding-bottom: 1px;
   padding-left: 1.5em; }
 
+.more-info {
+  margin-top: 0.2em;
+  padding: 0.2em; }
+
+.fa-star {
+  color: #FFD700; }
+
+.fa-star-half {
+  color: #FFD700; }
+
+.fa-yelp {
+  color: #D32323; }
+
+.fa-google {
+  color: #4885ed; }
+
 /*# sourceMappingURL=map.css.map */
