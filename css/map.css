@@ -8,18 +8,28 @@
 .map-header .glyphicon {
   font-size: 20px; }
 
-.eatery-list-container .well:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  cursor: pointer; }
-.eatery-list-container .well.selected {
-  background-color: rgba(255, 255, 255, 0.7); }
-.eatery-list-container .well.selected:hover {
-  background-color: rgba(255, 255, 255, 0.8); }
-.eatery-list-container .well.filtered-out {
-  background-color: rgba(245, 245, 245, 0.7);
-  opacity: 0.75; }
-.eatery-list-container .well.filtered-out:hover {
-  opacity: 1; }
+.eatery-lists-row {
+  display: flex;
+  justify-content: flex-start; }
+  .eatery-lists-row > * {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+
+.eatery-list-container .well {
+  margin-bottom: 0; }
+  .eatery-list-container .well:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer; }
+  .eatery-list-container .well.selected {
+    background-color: rgba(255, 255, 255, 0.7); }
+  .eatery-list-container .well.selected:hover {
+    background-color: rgba(255, 255, 255, 0.8); }
+  .eatery-list-container .well.filtered-out {
+    background-color: rgba(245, 245, 245, 0.7);
+    opacity: 0.75; }
+  .eatery-list-container .well.filtered-out:hover {
+    opacity: 1; }
 .eatery-list-container ul {
   list-style-type: none;
   padding-left: 0; }
