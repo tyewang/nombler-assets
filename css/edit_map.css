@@ -1,8 +1,8 @@
 .add-eatery {
   color: white;
   opacity: 0.8;
-  text-align: center;
   display: block;
+  text-align: center;
   width: 100%; }
 
 .pac-container {
@@ -175,46 +175,5 @@
     transform: rotate(0deg); } }
 #sharing-collapse {
   margin-top: 1em; }
-
-#add-eatery-link {
-  display: flex; }
-  #add-eatery-link:hover {
-    text-decoration: none; }
-
-.add-eatery-list-container {
-  width: 100%;
-  border-width: 2px;
-  border-style: dotted;
-  border-color: rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  min-height: 6em;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0); }
-  .add-eatery-list-container:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    background-clip: padding-box;
-    border-color: rgba(0, 0, 0, 0.5); }
-    .add-eatery-list-container:hover > * {
-      background-color: rgba(255, 255, 255, 0.2);
-      background-clip: padding-box;
-      border-color: rgba(0, 0, 0, 0.5);
-      color: rgba(0, 0, 0, 0.5); }
-
-.add-list {
-  color: rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  vertical-align: center;
-  font-size: 150%;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  border-style: dotted;
-  border-width: 2px;
-  border-color: rgba(0, 0, 0, 0.3);
-  margin: auto;
-  display: flex; }
-  .add-list i {
-    margin: auto; }
 
 /*# sourceMappingURL=edit_map.css.map */
