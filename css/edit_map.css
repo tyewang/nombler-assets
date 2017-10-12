@@ -176,11 +176,6 @@
 #sharing-collapse {
   margin-top: 1em; }
 
-#add-eatery-link {
-  display: flex; }
-  #add-eatery-link:hover {
-    text-decoration: none; }
-
 .add-eatery-list-container {
   width: 100%;
   border-width: 2px;
@@ -191,6 +186,7 @@
   display: flex;
   background-color: rgba(0, 0, 0, 0); }
   .add-eatery-list-container:hover {
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
     background-clip: padding-box;
     border-color: rgba(0, 0, 0, 0.5); }
@@ -200,7 +196,7 @@
       border-color: rgba(0, 0, 0, 0.5);
       color: rgba(0, 0, 0, 0.5); }
 
-.add-list {
+.add-list-button {
   color: rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
@@ -214,7 +210,24 @@
   border-color: rgba(0, 0, 0, 0.3);
   margin: auto;
   display: flex; }
-  .add-list i {
+  .add-list-button i {
     margin: auto; }
+
+#add-list {
+  display: flex;
+  justify-content: space-between; }
+
+#add-list-name {
+  background: none;
+  border: none;
+  width: 100%; }
+
+#add-list-checkmark {
+  font-size: 150%;
+  color: green;
+  margin-left: 0.5em; }
+  #add-list-checkmark:hover {
+    cursor: pointer;
+    color: darkgreen; }
 
 /*# sourceMappingURL=edit_map.css.map */
