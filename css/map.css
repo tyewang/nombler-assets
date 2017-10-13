@@ -56,4 +56,8 @@
 .fa-google {
   color: #4885ed; }
 
+@media (max-width: 768px) {
+  .eatery-lists-row {
+    flex-direction: column; } }
+
 /*# sourceMappingURL=map.css.map */

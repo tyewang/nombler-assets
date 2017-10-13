@@ -65,10 +65,6 @@
     text-align: center;
     line-height: inherit; }
 
-@media (max-width: 768px) {
-  #edit-map-controls {
-    float: none !important;
-    margin-bottom: 10px; } }
 .eatery-list-container li:hover {
   background-color: rgba(0, 0, 0, 0.05);
   cursor: -webkit-grab;
@@ -229,5 +225,10 @@
   #add-list-checkmark:hover {
     cursor: pointer;
     color: darkgreen; }
+
+@media (max-width: 768px) {
+  #edit-map-controls {
+    float: none !important;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=edit_map.css.map */
