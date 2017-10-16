@@ -40,6 +40,11 @@
     padding-bottom: 1px;
     padding-left: 1.5em; }
 
+.eatery-infowindow {
+  font-family: 'Lato', sans-serif; }
+  .eatery-infowindow h5 {
+    font-weight: bold; }
+
 .more-info {
   margin-top: 0.2em;
   padding: 0.2em; }
