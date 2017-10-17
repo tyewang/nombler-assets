@@ -213,10 +213,23 @@
   display: flex;
   justify-content: space-between; }
 
-#add-list-name {
+form {
+  display: flex; }
+
+input {
   background: none;
   border: none;
   width: 100%; }
+
+.submit-check {
+  background: none;
+  border: none;
+  font-size: 150%;
+  color: green;
+  margin-left: 0.5em; }
+  .submit-check:hover {
+    cursor: pointer;
+    color: darkgreen; }
 
 #add-list-checkmark {
   font-size: 150%;
