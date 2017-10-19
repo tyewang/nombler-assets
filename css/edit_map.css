@@ -213,13 +213,12 @@
   display: flex;
   justify-content: space-between; }
 
-form {
+.edit-eatery-list-name-form {
   display: flex; }
-
-input {
-  background: none;
-  border: none;
-  width: 100%; }
+  .edit-eatery-list-name-form input {
+    background: none;
+    border: none;
+    width: 100%; }
 
 .submit-check {
   background: none;
