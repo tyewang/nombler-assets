@@ -209,13 +209,16 @@
   .add-list-button i {
     margin: auto; }
 
-#add-list {
-  display: flex;
-  justify-content: space-between; }
-
-.edit-eatery-list-name-form {
+#add-list-form {
   display: flex; }
-  .edit-eatery-list-name-form input {
+  #add-list-form input {
+    background: none;
+    border: none;
+    width: 100%; }
+
+#edit-eatery-list-name-form {
+  display: flex; }
+  #edit-eatery-list-name-form input {
     background: none;
     border: none;
     width: 100%; }
