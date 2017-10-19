@@ -230,14 +230,6 @@
     cursor: pointer;
     color: darkgreen; }
 
-#add-list-checkmark {
-  font-size: 150%;
-  color: green;
-  margin-left: 0.5em; }
-  #add-list-checkmark:hover {
-    cursor: pointer;
-    color: darkgreen; }
-
 @media (max-width: 768px) {
   #edit-map-controls {
     float: none !important;
