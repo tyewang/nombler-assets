@@ -17,14 +17,14 @@
   font-weight: bolder;
 }
 
+.gm-style-iw
+{
+  font-family: 'Lato', sans-serif;
+}
+
 .gm-style-iw div
 {
   max-width: 28em;
-}
-
-.gm-style-iw *
-{
-  font-family: 'Lato', sans-serif;
 }
 
 .gm-style-iw h5
