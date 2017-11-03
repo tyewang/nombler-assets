@@ -66,5 +66,7 @@
 @media (max-width: 768px) {
   .eatery-lists-row {
     flex-direction: column; } }
+.highlighted {
+  font-weight: bolder; }
 
 /*# sourceMappingURL=map.css.map */
