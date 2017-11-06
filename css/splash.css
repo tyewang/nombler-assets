@@ -1,34 +1,45 @@
-.nombler-logo
-{
+.overlay-desc {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.overlay-content {
+  max-width: 60em;
+  padding: 0 5em 0 5em;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0)); }
+
+.nombler-logo {
   font-family: 'Pacifico', cursive;
   font-size: 600%;
   color: white;
-}
-.overlay-desc {
-    background: rgba(0,0,0,0);
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  text-align: center;
+  margin: 20% 0 10% 0; }
+
 .description {
-    font-family: 'Helvetica Neue';
-    color: white;
-    font-size: 120%;
-    text-align: center;
-}
+  font-family: 'Helvetica Neue';
+  color: white;
+  font-size: 120%;
+  text-align: left; }
+
 .actions {
-    text-align: center;
-}
+  margin-top: 10%;
+  text-align: center; }
+
 .btn-transparent {
-    background-color: transparent;
-    border-color: white;
-    font-family: 'Helvetica Neue';
-    color: white;
-    margin: auto;
-}
-.btn-transparent:hover {
+  background-color: transparent;
+  border-color: white;
+  font-family: 'Helvetica Neue';
+  color: white;
+  margin: auto; }
+  .btn-transparent:hover {
     border-color: lightblue;
-    color: lightblue;
-}
+    color: lightblue; }
+
+/*# sourceMappingURL=splash.css.map */
