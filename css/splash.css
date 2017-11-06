@@ -34,12 +34,23 @@
 
 .btn-transparent {
   background-color: transparent;
-  border-color: white;
   font-family: 'Helvetica Neue';
+  margin: auto;
   color: white;
-  margin: auto; }
-  .btn-transparent:hover {
-    border-color: lightblue;
-    color: lightblue; }
+  border-width: 2px; }
+
+#login {
+  border-color: #1e90ff;
+  background-color: rgba(30, 144, 255, 0.15); }
+  #login:hover {
+    border-color: #6bb6ff;
+    color: white; }
+
+#signup {
+  border-color: #00cd00;
+  background-color: rgba(0, 205, 0, 0.15); }
+  #signup:hover {
+    border-color: #1bff1b;
+    color: white; }
 
 /*# sourceMappingURL=splash.css.map */
