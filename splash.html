@@ -3,38 +3,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel=stylesheet type=text/css href="https://tyewang.github.io/nombler-public/css/full_screen_video.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
 <link rel=stylesheet type=text/css href="https://tyewang.github.io/nombler-public/css/splash.css">
 <body>
-	<div class="homepage-hero-module">
-			<div class="video-container">
-					<video autoplay loop class="fillWidth">
-							<source src="https://tyewang.github.io/nombler-public/video/Burrito_Time.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-							<source src="https://tyewang.github.io/nombler-public/video/Burrito_Time.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-					</video>
-					<div class="poster hidden">
-							<img src="https://tyewang.github.io/nombler-public/img/Burrito_Time.jpg" alt="">
-					</div>
-          <div class="overlay-desc">
-              <div class="overlay-content">
-                  <h1 class='nombler-logo'>Nombler</h1>
-                  <div class="description">
-                    <p>Nombler is a new way to organize all the restaurants and eateries that are important to you. Nombler allows you to easily track, categorize, map, and share all the food places that are important to you. With Nombler, you can:</p>
-                    <ul>
-                      <li>Track all the places to grab a cheap bite, when you're a starving and broke student</li>
-                      <li>Organize your favorite coffee shops to work from, when working from home simply won't cut it</li>
-                      <li>Share all the essential food spots for your city, when you want to show off how awesome your city is</li>
-                    </ul>
-                  </div>
-                  <div class="actions">
-                      <button id="login" class="btn btn-lg btn-transparent">Login</button>
-                      <button id="signup" class="btn btn-lg btn-transparent">Signup</button>
-                  </div>
+  <div class="homepage-hero-module">
+    <div class="video-container">
+      <video autoplay loop>
+        <source src="https://tyewang.github.io/nombler-public/video/Burrito_Time.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        <source src="https://tyewang.github.io/nombler-public/video/Burrito_Time.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+      </video>
+      <div class="poster hidden">
+        <img src="https://tyewang.github.io/nombler-public/img/Burrito_Time.jpg" alt="">
+      </div>
+      <div class="overlay-desc">
+        <div class="overlay-content">
+          <h1 class='nombler-logo'>Nombler</h1>
+          <h2>Nombler is a new way to organize all the restaurants and eateries that are important to you.</h2>
+          <div class="description">
+            <p>Nombler allows you to easily track, categorize, map, and share all the food places that are important to you. With Nombler, you can:</p>
+            <div id="example-carousel">
+              <div class="slide">
+                <div class="example-map">
+                  <p>Track all the places to grab a cheap bite, when you're a starving and broke student</p>
+                  <a href="https://www.nombler.com/rykcPVbQ" class='map-item' style='background-image: url("/nombler-public/img/cheapeatsnyc.png")'>
+                    <div class='map-item-content'>
+                      <h4>Where to get filled up for under $6 in NYC</h4>
+                    </div>
+                  </a>
+                </div>
               </div>
+              <div class="slide">
+                <div class="example-map">
+                  <p>Organize your favorite coffee shops to work from, when working from home simply won't cut it</p>
+                  <a href="https://www.nombler.com/JfrKDjWc" class='map-item' style='background-image: url("/nombler-public/img/workinginnyc.png")'>
+                    <div class='map-item-content'>
+                      <h4>Good Places for Working in NYC</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="example-map">
+                  <p>Share all the essential food spots for your city, when you want to show off how awesome your city is</p>
+                  <a href="https://www.nombler.com/vJyqzVWh" class='map-item' style='background-image: url("/nombler-public/img/wheretotakeyileiandshane.png")'>
+                    <div class='map-item-content'>
+                      <h4>Tight places we can go</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-			</div>
-	</div>
-</body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
-<script type="text/javascript" src="https://tyewang.github.io/nombler-public/js/splash.bundle.48173e6fc385c1ad9401.js"></script></body>
+          <div class="actions">
+            <button id="login" class="btn btn-lg btn-transparent">Login</button>
+            <button id="signup" class="btn btn-lg btn-transparent">Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+  <script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
+  <script type="text/javascript" src="https://tyewang.github.io/nombler-public/js/splash.bundle.88b81682a3d57fb541e0.js"></script></body>
