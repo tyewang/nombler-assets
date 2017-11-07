@@ -84,6 +84,12 @@ h2 {
     margin: 0 1em 0 1em;
     font-size: 120%; }
 
+.verb {
+  font-family: 'Pacifico', cursive;
+  font-size: 150%;
+  color: #1e90ff;
+  margin-right: 0.1em; }
+
 .map-item {
   width: 45%;
   color: black;
