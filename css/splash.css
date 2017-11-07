@@ -71,18 +71,22 @@ h2 {
     border-color: #1bff1b;
     color: white; }
 
+#example-carousel {
+  max-width: 80vw; }
+
 .example-map {
   display: flex;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
   .example-map p {
+    width: 45%;
     margin: 0 1em 0 1em;
-    max-width: 30em;
     font-size: 120%; }
 
 .map-item {
+  width: 45%;
   color: black;
-  display: block;
-  width: 100%;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,15 +111,28 @@ h2 {
     .map-item .map-item-content h4 {
       font-weight: bolder;
       margin: 0;
-      padding-top: 1em;
-      padding-bottom: 1em; }
-    .map-item .map-item-content p {
-      margin-bottom: 0; }
+      padding-top: 1em; }
     .map-item .map-item-content:after {
       background: rgba(255, 255, 255, 0.8);
       content: '';
       height: 1em;
       width: 100%;
       display: block; }
+
+@media (max-width: 550px) {
+  .example-map {
+    display: flex;
+    flex-direction: column; }
+    .example-map p {
+      width: 100%;
+      margin-bottom: 5%; }
+
+  .map-item {
+    width: 100%; }
+
+  #example-carousel {
+    padding: 1em;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3); } }
 
 /*# sourceMappingURL=splash.css.map */
