@@ -37,8 +37,11 @@
   text-align: center;
   margin: 20% 0 5% 0; }
 
+h2 {
+  font-family: 'Fira Sans'; }
+
 .description {
-  font-family: 'Helvetica Neue';
+  font-family: 'Lato';
   font-size: 120%;
   text-align: left;
   margin-top: 5%; }
@@ -50,7 +53,7 @@
 
 .btn-transparent {
   background-color: transparent;
-  font-family: 'Helvetica Neue';
+  font-family: 'Lato';
   margin: auto;
   border-width: 2px; }
 
