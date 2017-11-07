@@ -74,6 +74,12 @@ h2 {
 #example-carousel {
   max-width: 80vw; }
 
+.slick-slide {
+  margin: 0 1em; }
+
+.slick-list {
+  margin: 0 -1em; }
+
 .example-map {
   display: flex;
   justify-content: space-between;
