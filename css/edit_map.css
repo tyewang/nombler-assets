@@ -100,6 +100,15 @@
   cursor: -moz-grabbing;
   cursor: grabbing; }
 
+.trashDropArea {
+  position: fixed;
+  bottom: -10em;
+  right: -10em;
+  width: 20em;
+  height: 20em;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%; }
+
 .trash {
   position: fixed;
   bottom: 2em;
@@ -112,13 +121,13 @@
   background-color: #ea4b4b;
   transition: height 0.4s, width 0.4s, border-radius 0.4s step-end, margin 0.4s, box-shadow 0.4s;
   overflow: hidden; }
-  .trash:hover {
+  .trash:hover:not(.is-dragging):not(.item-hovering) {
     width: 15em;
     border-radius: 2em;
     transition: height 0.4s, width 0.4s, border-radius 0.4s step-start; }
-    .trash:hover i {
+    .trash:hover:not(.is-dragging):not(.item-hovering) i {
       display: none; }
-    .trash:hover p {
+    .trash:hover:not(.is-dragging):not(.item-hovering) p {
       display: inline-block; }
   .trash i {
     color: white;
