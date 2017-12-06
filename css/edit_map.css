@@ -13,12 +13,10 @@
   vertical-align: -5%;
   /* Adjust icon to correct height */
   color: lightgray; }
-
-.edit-hover {
-  color: green; }
-
-.edit-clicked {
-  color: darkgreen; }
+  .glyphicon-edit:hover {
+    color: green; }
+  .glyphicon-edit:active {
+    color: darkgreen; }
 
 @keyframes confetti {
   from {
@@ -225,9 +223,10 @@
     border: none;
     width: 100%; }
 
-#edit-eatery-list-name-form {
-  display: flex; }
-  #edit-eatery-list-name-form input {
+.edit-eatery-list-name-form {
+  display: flex;
+  margin-bottom: 0; }
+  .edit-eatery-list-name-form input {
     background: none;
     border: none;
     width: 100%; }
@@ -235,9 +234,10 @@
 .submit-check {
   background: none;
   border: none;
-  font-size: 150%;
+  font-size: 140%;
   color: green;
-  margin-left: 0.5em; }
+  margin-left: 0.5em;
+  padding-bottom: 0.4em; }
   .submit-check:hover {
     cursor: pointer;
     color: darkgreen; }
