@@ -45,11 +45,13 @@ a.logo:active
 }
 
 .page-footer {
+  position: relative;
   border-top: solid 2px rgba(255, 255, 255, 0.3);
   margin-top: 0.5em;
   padding: 0.5em 0 0.5em 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
+  z-index: 1;
 }
 .copyright {
   color: rgb(100, 100, 100);
