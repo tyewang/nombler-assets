@@ -34,7 +34,7 @@
   max-width: 60em;
   padding: 0 5em 0 5em;
   height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2) 85%, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 15%, rgba(0, 0, 0, 0.3) 85%, rgba(0, 0, 0, 0));
   color: white;
   z-index: 1; }
 
@@ -94,5 +94,33 @@ input {
       background-color: rgba(30, 144, 255, 0.25);
       border-color: rgba(30, 144, 255, 0.5);
       cursor: not-allowed; }
+
+.social-logins {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+  border-bottom: 2px solid white;
+  margin-bottom: 1em; }
+  .social-logins button {
+    padding: 2px;
+    justify-content: space-between;
+    width: 30%;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white; }
+
+.logo {
+  height: 3em;
+  width: 3em;
+  padding: 0;
+  background-color: transparent; }
+
+.fb-logo {
+  padding: 4px; }
+
+h3 {
+  text-align: center;
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=signup.css.map */
