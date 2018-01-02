@@ -46,34 +46,26 @@
         <div class="overlay-content">
           <h1 class='nombler-logo'><a href='/'>Nombler</a></h1>
           <div class="description">
-            <h3>Sign up with</h3>
+            <h3>Log in with</h3>
             <div class="social-logins">
               <button class="facebook social-login"><img class="logo fb-logo" src="https://tyewang.github.io/nombler-public/img/social-login/FB-f-Logo__blue_144.png"><span>Facebook</span></button>
               <button id="google-social-login" class="social-login" data-onsuccess="onSignIn"><img class='logo' src="https://tyewang.github.io/nombler-public/img/social-login/btn_google_light_normal_ios.svg"></img><span>Google</span></button>
               <button class="twitter social-login"><a href="/twitter_redirect_url/"><img class='logo' src="https://tyewang.github.io/nombler-public/img/social-login/Twitter_Logo_Blue.svg"><span>Twitter</span></a></button>
             </div>
             
-              <h3>Or sign up with email</h3>
-              <form id="email-signup-form">
+              <h3>Or login with email</h3>
+              <form id="email-login-form">
                 <fieldset>
                   <div class="form-fields">
-                    <div class='form-field'>
-                      <label for="name">Name</label>
-                      <input type="text" placeholder="Mariah Lee" id="name" name="name" required/>
-                    </div>
                     <div class='form-field'>
                       <label for="email">Email</label>
                       <input type="email" placeholder="ilovenombler@gmail.com" id="email" name="email" required/>
                     </div>
                     <div class='form-field'>
-                      <label for="username">Username</label>
-                      <input type="text" placeholder="nomblerbae1" id="username" name="username" required minlength='5' pattern='^[a-zA-Z_]+$'/>
-                    </div>
-                    <div class='form-field'>
                       <label for="password">Password</label>
                       <input type="password" id="password" name="password" required/>
                     </div>
-                    <input type="submit" class="submit-button disabled" value="Fill in the fields to sign up!" disabled="disabled"/>
+                    <input type="submit" class="submit-button" value="Log in"/>
                   </div>
                 </fieldset>
               </form>
