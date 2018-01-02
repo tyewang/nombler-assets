@@ -108,6 +108,12 @@ input {
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.3);
     border: 2px solid white; }
+    .social-logins button a {
+      color: white;
+      text-decoration: none; }
+    .social-logins button:hover {
+      border-color: lightgray;
+      background: rgba(255, 255, 255, 0.5); }
 
 .logo {
   height: 3em;
