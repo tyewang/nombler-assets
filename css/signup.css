@@ -111,9 +111,14 @@ input {
     .social-logins button a {
       color: white;
       text-decoration: none; }
-    .social-logins button:hover {
+    .social-logins button:hover:not(.disabled) {
       border-color: lightgray;
       background: rgba(255, 255, 255, 0.5); }
+    .social-logins button.disabled {
+      border-color: rgba(255, 255, 255, 0.5); }
+      .social-logins button.disabled div {
+        cursor: not-allowed;
+        opacity: 0.5; }
 
 .logo {
   height: 3em;
