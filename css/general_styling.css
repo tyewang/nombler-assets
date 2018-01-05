@@ -51,10 +51,11 @@ a.logo:active
   padding: 0.5em 0 0.5em 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
+  font-size: 80%;
   z-index: 1;
 }
 .copyright {
-  color: rgb(100, 100, 100);
+  color: rgb(140, 140, 140);
 }
 .aboutinfo {
   float: right;
