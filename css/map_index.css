@@ -1,6 +1,37 @@
 .jumbotron {
   background-color: rgba(245, 245, 245, 0.4); }
 
+ul.dropdown-menu {
+  min-width: 0;
+  left: auto;
+  right: 0; }
+
+button.with-notification-badge:after {
+  content: '!';
+  font-weight: bold;
+  position: absolute;
+  top: -0.2em;
+  right: -0.2em;
+  height: 1.5em;
+  width: 1.5em;
+  border: 1px solid #fea400;
+  border-radius: 1.5em;
+  background-color: orange;
+  will-change: transform;
+  animation: 0.5s bounce;
+  animation-iteration-count: 2; }
+
+a.with-notification-badge {
+  font-weight: bold !important;
+  color: gold !important; }
+
+@keyframes bounce {
+  0% {
+    top: -0.2em; }
+  50% {
+    top: -1em; }
+  100% {
+    top: -0.2em; } }
 .maps-container {
   display: flex;
   flex-wrap: wrap;
