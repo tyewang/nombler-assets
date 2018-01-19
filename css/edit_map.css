@@ -76,7 +76,21 @@ ul.dropdown-menu {
     line-height: inherit; }
 
 p.eatery-list-header {
-  width: fit-content; }
+  width: fit-content;
+  border-radius: 4px;
+  padding-left: 0.5em;
+  padding-right: 0.5em; }
+  p.eatery-list-header:after {
+    color: rgba(0, 128, 0, 0.5);
+    white-space: pre;
+    content: "  \f044";
+    font-family: FontAwesome;
+    font-size: 90%;
+    visibility: hidden; }
+  p.eatery-list-header:hover {
+    background-color: rgba(0, 0, 0, 0.05); }
+    p.eatery-list-header:hover:after {
+      visibility: visible; }
 
 .eatery-list-container li:hover {
   background-color: rgba(0, 0, 0, 0.05);
