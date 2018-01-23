@@ -10,15 +10,19 @@
 .map-header .glyphicon {
   font-size: 20px; }
 
-.map-title {
-  font-size: 2.2em;
-  margin-top: 2%;
-  margin-bottom: 2%; }
+.title {
+  margin-bottom: 0; }
+
+.byline {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #646464; }
 
 .map-description {
   line-height: 1.5;
-  font-size: 1.2em;
-  margin-bottom: 2%; }
+  font-size: 120%;
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .eatery-list-header {
   font-size: 1.2em;
