@@ -101,6 +101,11 @@ a.with-notification-badge {
       margin: 0;
       padding-top: 1em;
       padding-bottom: 1em; }
+      .map-item .map-item-content h4 p {
+        font-weight: lighter;
+        color: gray;
+        font-size: 80%;
+        margin-top: 0.1em; }
     .map-item .map-item-content p {
       margin-bottom: 0; }
     .map-item .map-item-content .thumbtack-container {
