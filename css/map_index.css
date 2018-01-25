@@ -142,6 +142,10 @@ a.with-notification-badge {
   ul.dropdown-menu {
     min-width: 0;
     left: right;
-    right: auto; } }
+    right: auto; }
+
+  .header-row {
+    display: flex;
+    flex-direction: column-reverse; } }
 
 /*# sourceMappingURL=map_index.css.map */
