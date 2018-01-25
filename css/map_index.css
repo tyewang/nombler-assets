@@ -6,6 +6,36 @@ ul.dropdown-menu {
   left: auto;
   right: 0; }
 
+.nav li a {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 150%;
+  color: black;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+  .nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black; }
+.nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  color: black; }
+  .nav li.active a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black; }
+  .nav li.active a:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black; }
+
+.tab-content {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0 4px 4px 4px; }
+
+.no-hearted-maps {
+  background-color: transparent; }
+  .no-hearted-maps h3 {
+    font-weight: bolder; }
+
 button.with-notification-badge:after {
   content: '!';
   font-weight: bold;
@@ -35,9 +65,7 @@ a.with-notification-badge {
 .maps-container {
   display: flex;
   flex-wrap: wrap;
-  /* I know this is isn't exact, but it's a pretty good approximation */
-  width: 103.3333333333%;
-  margin-left: -1.6666666667%; }
+  width: 100%; }
 
 .favorite-maps-container {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
@@ -75,13 +103,19 @@ a.with-notification-badge {
       padding-bottom: 1em; }
     .map-item .map-item-content p {
       margin-bottom: 0; }
-    .map-item .map-item-content .heart-container {
+    .map-item .map-item-content .thumbtack-container {
       color: indianred;
       background: none;
       position: absolute;
-      top: 0.6666666667em;
+      top: 0.5882352941em;
       right: 0;
-      font-size: 150%; }
+      font-size: 170%; }
+      .map-item .map-item-content .thumbtack-container .faded {
+        opacity: 0.4;
+        color: gray; }
+        .map-item .map-item-content .thumbtack-container .faded:hover {
+          opacity: 0.7;
+          color: indianred; }
     .map-item .map-item-content:after {
       background: rgba(255, 255, 255, 0.8);
       content: '';
