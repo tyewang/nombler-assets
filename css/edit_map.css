@@ -282,6 +282,9 @@ p.eatery-list-header {
 
 .allow-anyone-to-edit-container {
   display: flex; }
+  .allow-anyone-to-edit-container a {
+    margin: 0 0 0 0.1em;
+    color: gray; }
   .allow-anyone-to-edit-container label {
     margin: 0 0 0 1em; }
 

@@ -102,6 +102,9 @@ input {
   border-bottom: 2px solid white;
   margin-bottom: 1em; }
   .social-logins button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2px;
     justify-content: space-between;
     width: 30%;
@@ -109,16 +112,14 @@ input {
     background: rgba(255, 255, 255, 0.3);
     border: 2px solid white; }
     .social-logins button a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       color: white;
       text-decoration: none; }
-    .social-logins button:hover:not(.disabled) {
+    .social-logins button:hover {
       border-color: lightgray;
       background: rgba(255, 255, 255, 0.5); }
-    .social-logins button.disabled {
-      border-color: rgba(255, 255, 255, 0.5); }
-      .social-logins button.disabled div {
-        cursor: not-allowed;
-        opacity: 0.5; }
 
 .logo {
   height: 3em;
