@@ -1,3 +1,11 @@
+.title .fa {
+  font-size: 80%;
+  color: indianred; }
+  .title .fa:hover {
+    color: #d98383; }
+.title .fa-heart-o {
+  color: rgba(100, 100, 100, 0.3); }
+
 ul.dropdown-menu {
   min-width: 0;
   left: auto;
