@@ -134,4 +134,11 @@ h3 {
   text-align: center;
   margin-bottom: 1em; }
 
+.terms-and-privacy {
+  font-size: 80%;
+  margin-bottom: 2em; }
+  .terms-and-privacy a {
+    text-decoration: underline;
+    color: white; }
+
 /*# sourceMappingURL=signup.css.map */
