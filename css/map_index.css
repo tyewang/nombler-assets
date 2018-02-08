@@ -53,6 +53,12 @@ a.with-notification-badge {
 .jumbotron {
   background-color: rgba(245, 245, 245, 0.4); }
 
+.welcome h2 {
+  font-weight: bolder; }
+.welcome ol {
+  font-size: 1.5em;
+  margin: 1.5em 0 1.5em 0; }
+
 .tab-content {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 0 4px 4px 4px; }
