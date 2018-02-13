@@ -288,13 +288,17 @@ p.eatery-list-header {
 #sharing-collapse {
   margin-top: 1em; }
 
-.allow-anyone-to-edit-container {
-  display: flex; }
-  .allow-anyone-to-edit-container a {
-    margin: 0 0 0 0.1em;
+.toggles {
+  width: fit-content; }
+
+.toggle-container {
+  display: flex;
+  margin: 0.2em 0 0.2em 0; }
+  .toggle-container a {
+    margin: 0 1em 0 0.1em;
     color: gray; }
-  .allow-anyone-to-edit-container label {
-    margin: 0 0 0 1em; }
+  .toggle-container label {
+    margin: 0 0 0 auto; }
 
 .tgl {
   display: none; }
