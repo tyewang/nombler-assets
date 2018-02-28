@@ -56,6 +56,12 @@ h2 {
   text-align: left;
   margin-top: 5%; }
 
+.content-consumer-pitch {
+  display: none;
+  margin: 2em -2em 2em -2em;
+  max-width: 18em;
+  font-size: 160%; }
+
 .form-fields {
   display: flex;
   flex-direction: column; }
@@ -140,5 +146,10 @@ h3 {
   .terms-and-privacy a {
     text-decoration: underline;
     color: white; }
+
+@media (max-width: 500px) {
+  .content-consumer-pitch {
+    margin-left: 0;
+    margin-right: 0; } }
 
 /*# sourceMappingURL=signup.css.map */
