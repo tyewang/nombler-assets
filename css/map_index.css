@@ -134,6 +134,17 @@ a.with-notification-badge {
       width: 100%;
       display: block; }
 
+.tab-description {
+  margin-left: 1.6666666667%;
+  margin-right: 1.6666666667%; }
+  .tab-description h2 {
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    font-family: 'Fira Sans'; }
+  .tab-description p {
+    margin: 0; }
+
 @media (max-width: 768px) {
   #controls {
     float: none !important;
