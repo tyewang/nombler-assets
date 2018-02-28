@@ -51,7 +51,7 @@ a.with-notification-badge {
   100% {
     top: -0.2em; } }
 .jumbotron {
-  background-color: rgba(245, 245, 245, 0.4); }
+  background-color: transparent; }
 
 .welcome h2 {
   font-weight: bolder; }
