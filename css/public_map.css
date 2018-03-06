@@ -65,5 +65,13 @@
     transform: translateX(1000px); }
   to {
     transform: translateX(0); } }
+.add-eatery {
+  color: white;
+  opacity: 0.5;
+  text-align: center;
+  display: block;
+  width: 100%; }
+  .add-eatery:hover {
+    cursor: not-allowed; }
 
 /*# sourceMappingURL=public_map.css.map */
