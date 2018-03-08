@@ -10,68 +10,69 @@
   <link rel="manifest" href="https://tyewang.github.io/nombler-public/img/favicon/manifest.json">
   <link rel="mask-icon" href="https://tyewang.github.io/nombler-public/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="https://tyewang.github.io/nombler-public/img/favicon/favicon.ico">
+
+  <link rel=stylesheet type=text/css href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato|Pacifico" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
   <link rel=stylesheet type=text/css href="https://tyewang.github.io/nombler-public/css/splash.css">
 </head>
 <body>
   <div class="homepage-hero-module">
     <div class="video-container">
-      <video class="background-video" autoplay loop>
-        <source src="https://tyewang.github.io/nombler-public/video/Burrito_Time.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        <source src="https://tyewang.github.io/nombler-public/video/Burrito_Time.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-      </video>
-      <div class="poster hidden">
-        <img src="https://tyewang.github.io/nombler-public/img/Burrito_Time.jpg" alt="">
-      </div>
       <div class="overlay-desc">
         <div class="overlay-content">
-          <h1 class='nombler-logo'>Nombler</h1>
+          <div class="navbar">
+            <span class='nombler-logo'>Nombler</span>
+            <span class='navlinks'>
+              <a href='/signup' class='signup'>Sign Up</a>
+              <a href='/login'>Login</a>
+            </span>
+          </div>
           <div class='main-jumbotron'>
             <span class='one-line-pitch'>Nombler is a new way to organize all the restaurants and eateries that are important to you.</span>
-            <div class='login-and-signup'>
-              <a href='/signup' class="btn btn-lg btn-transparent cta">Try it out</a>
-              <a href='/login' id="login" class="btn btn-lg btn-transparent">Login if you already have an account</a>
-            </div>
+            <a href='/signup' class="btn btn-lg btn-transparent cta">Try it out</a>
           </div>
           <div class="description">
-            <h2>With Nombler you can:</h2>
-            <div id="example-carousel">
-              <div class="slide">
-								<div class="description-section">
-									<p>Easily create beautiful maps with all your places. Tracking and organization is dead simple.</p>
-									<video autoplay loop>
-										<source src="https://tyewang.github.io/nombler-public/video/nomblerdemo.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-									</video>
-								</div>
+            <div class="valueprops">
+              <div class="description-section">
+                <p><span class='keyverb'>Create</span> beautiful, interactive maps easily. Tracking and organization is dead simple.</p>
+                <video autoplay loop>
+                  <source src="https://tyewang.github.io/nombler-public/video/nomblerdemo.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                </video>
               </div>
-              <div class="slide">
-								<div class="description-section"><p>Share your maps with all your friends.</p><img src="https://tyewang.github.io/nombler-public/img/nomblermessage2.png"></div>
+              <div class="description-section"><p><span class='keyverb'>Share</span> your maps with all your friends.</p><img src="https://tyewang.github.io/nombler-public/img/nomblermessage2.png"></div>
+              <div class="description-section">
+                <p><span class='keyverb'>Collaborate</span> with others to get additional recommendations</p>
+                <a href="https://www.nombler.com/ZgcrhRPC/" class='map-item' style='background-image: url("https://tyewang.github.io/nombler-public/img/wheretodrinkbeerinnyc.png")'>
+                  <div class='map-item-content'>
+                    <h4>Help me build a map of great beer and cider places in NYC!</h4>
+                  </div>
+                </a>
               </div>
-							<div class="slide">
-								<div class="description-section">
-									<p>Collaborate with others to get additional recommendations</p>
-									<a href="https://www.nombler.com/bdDwBk" class='map-item' style='background-image: url("https://tyewang.github.io/nombler-public/img/wheretodrinkbeerinnyc.png")'>
-										<div class='map-item-content'>
-											<h4>Help me build a map of great beer and cider places in NYC!</h4>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="slide">
-								<div class="description-section">
-									<p>Discover new maps created by other Nombler members</p><img src="https://tyewang.github.io/nombler-public/img/featuredmaps.jpg">
-								</div>
-							</div>
-						</div>
+              <div class="description-section">
+                <p><span class='keyverb'>Discover</span> new maps created by other Nombler members</p><img src="https://tyewang.github.io/nombler-public/img/featuredmaps.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <span class='copyright'>Copyright &#169; 2017 Nombler LLC. All rights reserved.</span>
+            <span class='social'>
+              <a href='https://www.facebook.com/nombler/'><i class="fa fa-facebook-square fa-3x"></i></a>
+              <a href='https://twitter.com/NomblerApp'><i class="fa fa-twitter-square fa-3x"></i></a>
+            </span>
+            <span class='other'>
+              <span class='legal'>
+                <a href='/tos' target='_blank'>Terms</a>
+                <a href='/privacy' target='_blank'>Privacy</a>
+              </span>
+              <span class='divider'>|</span>
+              <a class='inquiries' href='mailto:nombler@nombler.com'>Inquiries</a>
+              </span>
           </div>
         </div>
       </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://tyewang.github.io/nombler-public/js/splash.bundle.cb318681085956c5aab6.js"></script>
+  <script type="text/javascript" src="https://tyewang.github.io/nombler-public/js/splash.bundle.71adcdd3d963f6c4b7bf.js"></script>
 </body>
