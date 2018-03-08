@@ -114,7 +114,7 @@
     border-radius: 4px; }
   .description-section img {
     width: 28vw;
-    height: 28vw;
+    height: auto;
     border-radius: 4px; }
   .description-section:nth-child(2), .description-section:nth-child(3) {
     background-color: rgba(100, 100, 100, 0.5); }
