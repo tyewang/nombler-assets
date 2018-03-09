@@ -98,7 +98,7 @@
 
 .description-section {
   box-sizing: border-box;
-  width: 50vw;
+  width: 50%;
   padding-bottom: 1em;
   display: flex;
   flex-direction: column;
