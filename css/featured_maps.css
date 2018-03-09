@@ -140,7 +140,7 @@
     .map-item .map-item-content > * {
       background: rgba(255, 255, 255, 0.8);
       padding: 0 7% 0em 7%;
-      max-height: 60%; }
+      max-height: 30%; }
     .map-item .map-item-content h4 {
       font-weight: bolder;
       font-size: 120%;
