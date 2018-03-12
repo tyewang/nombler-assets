@@ -52,8 +52,52 @@
 
 .nombler-logo {
   font-family: 'Pacifico', cursive;
-  font-size: 300%; }
+  font-size: 300%;
+  color: white;
+  text-decoration: none; }
 
+.footer {
+  margin-top: 2em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer a {
+    color: white;
+    text-decoration: none; }
+    .footer a:hover {
+      color: gray; }
+  .footer .social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    .footer .social a {
+      margin: 0.5em; }
+  .footer .copyright {
+    font-size: 80%; }
+  .footer .legal a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 80%; }
+  .footer .inquiries {
+    font-weight: bold;
+    font-size: 80%;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
+
+@media (max-width: 45em) {
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: baseline; }
+    .footer .legal a:first-child {
+      margin-left: 0; }
+    .footer .social {
+      left: auto;
+      right: 0; } }
 .main-jumbotron {
   max-width: 50em;
   margin: 6em;
@@ -161,38 +205,6 @@
       width: 100%;
       display: block; }
 
-.footer {
-  margin-top: 2em;
-  box-sizing: border-box;
-  width: 100%;
-  height: 4em;
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .footer a {
-    color: white;
-    text-decoration: none; }
-    .footer a:hover {
-      color: gray; }
-  .footer .social {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); }
-    .footer .social a {
-      margin: 0.5em; }
-  .footer .copyright {
-    font-size: 80%; }
-  .footer .legal a {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 80%; }
-  .footer .inquiries {
-    font-weight: bold;
-    font-size: 80%;
-    margin-left: 0.5em;
-    margin-right: 0.5em; }
-
 @media (max-width: 560px) {
   .main-jumbotron {
     margin: 3em 1em 3em 1em; }
@@ -210,16 +222,6 @@
       background-color: transparent; }
     .description-section:nth-child(even) {
       background-color: rgba(100, 100, 100, 0.5); } }
-@media (max-width: 45em) {
-  .footer {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: baseline; }
-    .footer .legal a:first-child {
-      margin-left: 0; }
-    .footer .social {
-      left: auto;
-      right: 0; } }
 @media (min-width: 850px) {
   .description-section:nth-child(odd) {
     padding-left: 10vw; }
