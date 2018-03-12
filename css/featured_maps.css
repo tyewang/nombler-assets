@@ -52,7 +52,9 @@
 
 .nombler-logo {
   font-family: 'Pacifico', cursive;
-  font-size: 300%; }
+  font-size: 300%;
+  color: white;
+  text-decoration: none; }
 
 .footer {
   margin-top: 2em;
