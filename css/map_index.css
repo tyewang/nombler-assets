@@ -150,15 +150,17 @@ a.with-notification-badge {
     float: none !important;
     margin-bottom: 10px; }
 
-  .maps-container {
-    justify-content: space-around; }
-
   .map-item {
     color: inherit;
     display: block;
-    width: 45%;
+    width: 100%;
     margin-left: 0;
     margin-right: 0; }
+
+  #my-maps .maps-container:not(.favorite-maps-container) {
+    justify-content: space-around; }
+    #my-maps .maps-container:not(.favorite-maps-container) .map-item {
+      width: 45%; }
 
   ul.dropdown-menu {
     min-width: 0;
