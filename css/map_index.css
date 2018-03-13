@@ -150,14 +150,13 @@ a.with-notification-badge {
     float: none !important;
     margin-bottom: 10px; }
 
-  #maps-container {
-    width: 100%;
-    margin-left: 0; }
+  .maps-container {
+    justify-content: space-around; }
 
   .map-item {
     color: inherit;
     display: block;
-    width: 100%;
+    width: 45%;
     margin-left: 0;
     margin-right: 0; }
 
@@ -168,6 +167,9 @@ a.with-notification-badge {
 
   .header-row {
     display: flex;
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+
+  .aboutinfo {
+    float: none; } }
 
 /*# sourceMappingURL=map_index.css.map */
