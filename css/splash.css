@@ -92,12 +92,28 @@
   .footer {
     flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: baseline; }
+    align-items: baseline;
+    height: auto;
+    margin-top: 0; }
     .footer .legal a:first-child {
       margin-left: 0; }
     .footer .social {
-      left: auto;
-      right: 0; } }
+      position: static;
+      transform: none; }
+      .footer .social a {
+        margin-left: 0; } }
+@media (max-width: 35em) {
+  .navbar {
+    padding-bottom: 0; }
+
+  .navlinks {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right; }
+    .navlinks .divider {
+      display: none; }
+    .navlinks a {
+      margin-bottom: 0.5em; } }
 .main-jumbotron {
   max-width: 50em;
   margin: 6em;
