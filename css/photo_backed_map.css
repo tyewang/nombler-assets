@@ -1,0 +1,128 @@
+#map-canvas {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vw;
+  height: 90vh;
+  border-top: 2px solid black;
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 1em; }
+
+.well {
+  border: none;
+  border-top: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 4px 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: none; }
+
+.map-header {
+  margin-top: 1em;
+  padding: 1em 0 1em 0; }
+  .map-header .glyphicon {
+    font-size: 20px; }
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.byline {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #646464; }
+
+.map-description {
+  line-height: 1.5;
+  font-size: 120%;
+  margin: 0; }
+  .map-description p {
+    margin-bottom: 0; }
+
+.eatery-lists {
+  margin-top: 2%; }
+
+.eatery-list-header {
+  text-decoration: underline black;
+  font-family: "fira sans";
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
+  font-weight: bolder; }
+
+.eatery-lists-row {
+  display: flex;
+  justify-content: flex-start; }
+  .eatery-lists-row > * {
+    flex: 0 0 32%;
+    margin-right: 2%;
+    margin-bottom: 2%; }
+
+.eatery-list-container {
+  position: relative; }
+  .eatery-list-container .well {
+    margin-bottom: 0; }
+    .eatery-list-container .well:hover {
+      border-color: green;
+      background-color: rgba(255, 255, 255, 0.9);
+      cursor: pointer; }
+    .eatery-list-container .well.selected {
+      border-color: darkgreen;
+      background-color: white; }
+    .eatery-list-container .well.selected:hover {
+      border-color: gray;
+      background-color: rgba(255, 255, 255, 0.9); }
+    .eatery-list-container .well.filtered-out {
+      border-color: gray;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 0.55; }
+    .eatery-list-container .well.filtered-out:hover {
+      opacity: 1; }
+  .eatery-list-container ul {
+    list-style-type: none;
+    padding-left: 0; }
+  .eatery-list-container li {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 1.5em; }
+
+.eatery-infowindow {
+  font-family: 'Lato', sans-serif; }
+  .eatery-infowindow h5 {
+    font-weight: bold; }
+
+.more-info {
+  margin-top: 0.2em;
+  padding: 0.2em;
+  padding-left: 0.5em;
+  border-left: 2px solid lightgray; }
+
+.fa-star {
+  color: #FFD700; }
+
+.fa-star-half {
+  color: #FFD700; }
+
+.fa-yelp {
+  color: #D32323; }
+
+.fa-google {
+  color: #4885ed; }
+
+.highlighted {
+  font-weight: bolder; }
+
+.gm-style-iw {
+  font-family: 'Lato', sans-serif; }
+
+.gm-style-iw div {
+  max-width: 28em; }
+
+.gm-style-iw h5 {
+  font-weight: bold;
+  font-size: 1.2em; }
+
+@media (max-width: 768px) {
+  .eatery-lists-row {
+    flex-direction: column; }
+
+  .eatery-link {
+    font-size: 130%; } }
+
+/*# sourceMappingURL=photo_backed_map.css.map */
