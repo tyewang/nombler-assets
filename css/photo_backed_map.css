@@ -27,7 +27,8 @@
 .byline {
   margin-top: 0;
   margin-bottom: 0;
-  color: #646464; }
+  color: #646464;
+  font-weight: lighter; }
 
 .map-description {
   line-height: 1.5;
@@ -80,7 +81,8 @@
   .eatery-list-container li {
     padding-top: 1px;
     padding-bottom: 1px;
-    padding-left: 1.5em; }
+    padding-left: 1.5em;
+    font-weight: lighter; }
 
 .eatery-infowindow {
   font-family: 'Lato', sans-serif; }
