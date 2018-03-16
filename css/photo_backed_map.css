@@ -130,24 +130,25 @@
     font-size: 130%; } }
 @media (min-width: 45em) {
   .map-description {
-    font-size: 1.5em; }
+    font-size: 1.25em; }
 
   .title {
-    font-size: 3em; }
+    font-size: 2.5em; }
 
   .byline {
     font-size: 1.5em; } }
 @media (min-width: 60em) {
   .map-description {
-    font-size: 2em; }
+    font-size: 1.75em;
+    padding: 1.25em 0 1.25em 0; }
 
   .title {
-    font-size: 4em; }
+    font-size: 3em; }
 
-  .byline {
-    font-size: 1.5em; } }
-@media (min-width: 80em) {
-  .map-description {
-    padding: 2em; } }
+  .eatery-list-header {
+    font-size: 1.5em; }
+
+  .eatery-link {
+    font-size: 1.25em; } }
 
 /*# sourceMappingURL=photo_backed_map.css.map */
