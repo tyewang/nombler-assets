@@ -15,7 +15,8 @@
   box-shadow: none; }
 
 .map-header {
-  margin-top: 1em;
+  max-width: 100rem;
+  margin: 1em 0 0 0;
   padding: 1em 0 1em 0; }
   .map-header .glyphicon {
     font-size: 20px; }
@@ -31,9 +32,10 @@
   font-weight: lighter; }
 
 .map-description {
+  max-width: 100rem;
   line-height: 1.5;
   font-size: 120%;
-  margin: 0; }
+  margin: 0 auto 0 auto; }
   .map-description p {
     margin-bottom: 0; }
 
@@ -126,5 +128,26 @@
 
   .eatery-link {
     font-size: 130%; } }
+@media (min-width: 45em) {
+  .map-description {
+    font-size: 1.5em; }
+
+  .title {
+    font-size: 3em; }
+
+  .byline {
+    font-size: 1.5em; } }
+@media (min-width: 60em) {
+  .map-description {
+    font-size: 2em; }
+
+  .title {
+    font-size: 4em; }
+
+  .byline {
+    font-size: 1.5em; } }
+@media (min-width: 80em) {
+  .map-description {
+    padding: 2em; } }
 
 /*# sourceMappingURL=photo_backed_map.css.map */
