@@ -227,14 +227,16 @@ a.with-notification-badge:after {
 body {
   font-family: 'Lato', sans-serif;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 .page-container {
   height: 100%;
   width: 100%;
   padding-left: 5vw;
   padding-right: 5vw;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); }
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background-attachment: fixed; }
 
 h1 {
   font-family: 'Fira Sans', sans-serif; }
