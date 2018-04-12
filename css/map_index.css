@@ -282,6 +282,8 @@ h1 {
     justify-content: space-around; }
     #my-maps .maps-container:not(.favorite-maps-container) .map-item {
       width: 45%; }
+    #my-maps .maps-container:not(.favorite-maps-container) .map-description {
+      display: none !important; }
 
   ul.dropdown-menu {
     min-width: 0;
