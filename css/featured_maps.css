@@ -165,11 +165,12 @@
         font-size: 80%;
         margin-top: 0.1em; }
     .map-item .map-item-content p {
-      background: rgba(255, 255, 255, 0.8);
       margin-top: 0;
       font-size: 90%;
       margin-bottom: 0;
       font-weight: lighter; }
+    .map-item .map-item-content .map-description {
+      background: rgba(255, 255, 255, 0.8); }
     .map-item .map-item-content:after {
       background: rgba(255, 255, 255, 0.8);
       content: '';
