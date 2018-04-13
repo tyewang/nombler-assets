@@ -15,29 +15,43 @@
   box-shadow: none; }
 
 .map-header {
-  max-width: 100rem;
-  margin: 1em 0 0 0;
-  padding: 1em 0 1em 0; }
+  position: relative;
+  margin: 1em auto 0 auto;
+  padding: 1em 0 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .map-header .glyphicon {
     font-size: 20px; }
 
 .title {
   margin-top: 0;
   margin-bottom: 0;
-  color: white; }
+  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+  font-weight: bold; }
 
 .byline {
   margin-top: 0;
   margin-bottom: 0;
   color: #d2d2d2;
-  font-weight: lighter; }
+  font-weight: lighter;
+  text-align: center; }
+  .byline a {
+    color: white;
+    text-decoration: underline; }
+    .byline a:hover {
+      color: #d2d2f0; }
 
 .map-description {
   color: white;
   max-width: 100rem;
   line-height: 1.5;
-  font-size: 120%;
-  margin: 0 auto 0 auto; }
+  margin: 0 auto 0 auto;
+  width: fit-content;
+  font-weight: lighter; }
 
 .eatery-lists {
   margin-top: 2%; }
@@ -45,7 +59,6 @@
 .eatery-list-header {
   text-decoration: underline black;
   font-family: "fira sans";
-  font-size: 1.2em;
   margin-bottom: 0.6em;
   font-weight: bolder; }
 
@@ -132,23 +145,7 @@
   .map-description {
     font-size: 1.25em; }
 
-  .title {
-    font-size: 2.5em; }
-
   .byline {
     font-size: 1.5em; } }
-@media (min-width: 60em) {
-  .map-description {
-    font-size: 1.75em;
-    padding: 1.25em 0 1.25em 0; }
-
-  .title {
-    font-size: 3em; }
-
-  .eatery-list-header {
-    font-size: 1.5em; }
-
-  .eatery-link {
-    font-size: 1.25em; } }
 
 /*# sourceMappingURL=photo_backed_map_dark.css.map */

@@ -111,7 +111,17 @@ body {
   .title .fa:hover {
     color: #d98383; }
 .title .fa-heart-o {
-  color: rgba(100, 100, 100, 0.3); }
+  color: #ebebeb; }
+
+#edit-map-controls {
+  position: absolute;
+  right: 0;
+  top: 1em; }
+  #edit-map-controls .btn {
+    border: none; }
+  #edit-map-controls .btn-default.settings {
+    background-color: #646464;
+    color: white; }
 
 ul.dropdown-menu {
   min-width: 0;
@@ -395,7 +405,9 @@ p.eatery-list-header {
 
 @media (max-width: 768px) {
   #edit-map-controls {
-    float: none !important;
+    position: relative;
+    right: auto;
+    top: auto;
     margin: 10px 0 10px 0; }
 
   ul.dropdown-menu {
