@@ -52,6 +52,11 @@
   margin: 0 auto 0 auto;
   width: fit-content;
   font-weight: lighter; }
+  .map-description a {
+    color: #d2d2d2;
+    text-decoration: underline; }
+    .map-description a:hover {
+      color: white; }
 
 .eatery-lists {
   margin-top: 2%; }
