@@ -188,6 +188,9 @@
     width: 80%;
     margin-left: 0;
     margin-right: 0; } }
+.overlay-desc {
+  background-attachment: fixed; }
+
 .intro {
   margin: 0 1em 1em 1em; }
   .intro h1 {
@@ -200,5 +203,16 @@
 #featured-maps {
   width: 100%;
   font-family: 'Lato', sans-serif; }
+
+@media (max-width: 35em) {
+  html, body {
+    height: 100%; }
+
+  html {
+    overflow-y: hidden; }
+
+  body {
+    overflow-y: scroll;
+    background-color: #000000; } }
 
 /*# sourceMappingURL=featured_maps.css.map */
