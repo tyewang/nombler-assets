@@ -1,3 +1,122 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+@media (max-width: 35em) {
+  html, body {
+    height: 100%; }
+
+  html {
+    overflow-y: hidden; }
+
+  body {
+    overflow-y: scroll;
+    background-color: #000000; } }
+.page-header {
+  margin-top: 0;
+  font-family: 'Fira Sans';
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center; }
+  .page-header .navlinks {
+    position: relative;
+    margin-left: auto; }
+    .page-header .navlinks a {
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      margin-left: 0.75em;
+      margin-right: 0.75em; }
+      .page-header .navlinks a:hover {
+        color: lightgray; }
+    .page-header .navlinks .signup {
+      color: #00cd00; }
+
+.nombler-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 300%;
+  color: white;
+  text-decoration: none; }
+  .nombler-logo:hover {
+    color: white;
+    text-decoration: none; }
+
+@media (max-width: 35em) {
+  .page-header {
+    padding-bottom: 0; }
+
+  .navlinks {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right; }
+    .navlinks .divider {
+      display: none; }
+    .navlinks a {
+      margin-bottom: 0.5em; } }
+.page-footer {
+  font-family: 'Fira Sans';
+  color: white;
+  margin-top: 2em;
+  box-sizing: border-box;
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .page-footer a {
+    color: white;
+    text-decoration: none; }
+    .page-footer a:hover {
+      color: gray; }
+  .page-footer .social {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    .page-footer .social a {
+      margin: 0.5em; }
+  .page-footer .copyright {
+    font-size: 80%; }
+  .page-footer .legal a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 80%; }
+  .page-footer .inquiries {
+    font-weight: bold;
+    font-size: 80%;
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
+
+@media (max-width: 45em) {
+  .page-footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    height: auto;
+    margin-top: 0; }
+    .page-footer .legal a:first-child {
+      margin-left: 0; }
+    .page-footer .social {
+      position: static;
+      transform: none; }
+      .page-footer .social a {
+        margin-left: 0; } }
 .maps-container {
   display: flex;
   flex-wrap: wrap;
@@ -21,26 +140,33 @@
   .map-item:hover:after {
     background-color: rgba(255, 255, 255, 0.5); }
   .map-item .map-item-content {
+    color: black;
     position: absolute;
     width: 100%;
     height: 85%;
     overflow: hidden; }
     .map-item .map-item-content > * {
-      background: rgba(255, 255, 255, 0.8);
       padding: 0 7% 0em 7%;
-      max-height: 60%; }
+      max-height: 30%; }
     .map-item .map-item-content h4 {
+      background: rgba(255, 255, 255, 0.8);
       font-weight: bolder;
+      font-size: 120%;
       margin: 0;
       padding-top: 1em;
       padding-bottom: 1em; }
       .map-item .map-item-content h4 p {
-        font-weight: lighter;
+        font-weight: 300;
         color: gray;
         font-size: 80%;
         margin-top: 0.1em; }
     .map-item .map-item-content p {
-      margin-bottom: 0; }
+      margin-top: 0;
+      font-size: 90%;
+      margin-bottom: 0;
+      font-weight: lighter; }
+    .map-item .map-item-content .map-description {
+      background: rgba(255, 255, 255, 0.8); }
     .map-item .map-item-content:after {
       background: rgba(255, 255, 255, 0.8);
       content: '';
@@ -49,15 +175,23 @@
       display: block; }
 
 @media (max-width: 768px) {
-  #maps-container {
-    width: 100%;
-    margin-left: 0; }
+  .maps-container {
+    justify-content: center; }
 
   .map-item {
     color: inherit;
     display: block;
-    width: 100%;
+    width: 80%;
     margin-left: 0;
     margin-right: 0; } }
+#user-gallery {
+  color: white; }
+
+.page-container {
+  background: rgba(100, 100, 100, 0.3); }
+
+body {
+  background-image: url("/nombler-public/img/splashbackground.jpeg");
+  background-position: 0% 25%; }
 
 /*# sourceMappingURL=user_gallery.css.map */
