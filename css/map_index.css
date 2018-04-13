@@ -282,6 +282,10 @@ h1 {
     justify-content: space-around; }
     #my-maps .maps-container:not(.favorite-maps-container) .map-item {
       width: 45%; }
+    #my-maps .maps-container:not(.favorite-maps-container) .map-item-content > * {
+      max-height: 70%; }
+    #my-maps .maps-container:not(.favorite-maps-container) .map-item-content:after {
+      display: none; }
     #my-maps .maps-container:not(.favorite-maps-container) .map-description {
       display: none !important; }
 
