@@ -129,8 +129,9 @@ label {
   color: white; }
 
 #profile-photo-label {
-  position: relative; }
-  #profile-photo-label img {
+  position: relative;
+  height: 5em; }
+  #profile-photo-label object {
     object-position: center;
     object-fit: cover;
     background-color: purple;
