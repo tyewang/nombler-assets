@@ -134,6 +134,18 @@ body {
   animation: 5s bounce 1s infinite;
   transition: transform; }
 
+.byline object, .byline img {
+  margin-left: 0.15em;
+  object-position: center;
+  object-fit: cover;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  vertical-align: middle; }
+.byline img {
+  border: 2px solid black;
+  background-color: #969696; }
+
 #follow-heart-link {
   color: rgba(100, 100, 100, 0.3); }
 
