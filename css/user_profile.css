@@ -130,14 +130,17 @@ label {
 
 #profile-photo-label {
   position: relative;
+  width: 5em;
   height: 5em; }
-  #profile-photo-label object {
+  #profile-photo-label object, #profile-photo-label img {
     object-position: center;
     object-fit: cover;
-    background-color: purple;
     width: 5em;
     height: 5em;
     border-radius: 50%; }
+  #profile-photo-label img {
+    border: 2px solid black;
+    background-color: #969696; }
   #profile-photo-label:hover:after {
     display: flex;
     align-items: center;
