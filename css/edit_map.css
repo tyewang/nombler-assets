@@ -56,6 +56,9 @@ body {
   .nombler-logo:hover {
     color: white;
     text-decoration: none; }
+  .nombler-logo:focus {
+    color: white;
+    text-decoration: none; }
 
 @media (max-width: 35em) {
   .page-header {
