@@ -60,6 +60,117 @@ body {
     color: white;
     text-decoration: none; }
 
+#search {
+  height: 2em;
+  width: 2em;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1em;
+  padding: 0.5em;
+  color: white;
+  position: relative;
+  transition: width 0.5s, opacity 0.3s;
+  border: none; }
+  #search::-webkit-placeholder {
+    color: #c8c8c8; }
+  #search::placeholder {
+    color: #c8c8c8; }
+  #search:focus {
+    width: 11em;
+    opacity: 1;
+    outline: none; }
+  #search:after {
+    content: "\25AE";
+    font-family: FontAwesome;
+    left: -5px;
+    position: absolute;
+    top: 0; }
+
+.search-label {
+  position: absolute;
+  top: -50%;
+  right: 0.5em;
+  font-size: 1.5em;
+  color: white; }
+
+.search-container {
+  position: relative; }
+
+#search-results {
+  width: 11em;
+  top: 1.5em;
+  padding: 0;
+  border: none; }
+  #search-results li a {
+    display: flex;
+    border-bottom: 1px solid #c8c8c8;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+    margin: 0; }
+    #search-results li a div {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1em; }
+    #search-results li a object, #search-results li a img {
+      margin-left: 0.15em;
+      object-position: center;
+      object-fit: cover;
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      vertical-align: middle; }
+    #search-results li a img {
+      border: 2px solid black;
+      background-color: #969696; }
+  #search-results li:first-child a {
+    margin-top: 0.15em; }
+  #search-results li:last-child a {
+    border-bottom: none;
+    margin-bottom: 0.15em; }
+
+.search-result-name {
+  font-weight: bolder;
+  color: black;
+  word-break: break-all;
+  white-space: normal; }
+
+.search-result-username {
+  font-size: 0.8em;
+  color: #646464;
+  word-break: break-all;
+  white-space: normal; }
+
+.search-animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em; }
+
+.search-animation-line {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 0.7em;
+  background-color: #c8c8c8;
+  margin-right: 0.4em; }
+
+.search-animation-line:nth-last-child(1) {
+  animation: search-animation-bounce .6s .1s linear infinite; }
+
+.search-animation-line:nth-last-child(2) {
+  animation: search-animation-bounce .6s .2s linear infinite; }
+
+.search-animation-line:nth-last-child(3) {
+  animation: search-animation-bounce .6s .3s linear infinite; }
+
+@keyframes search-animation-bounce {
+  0% {
+    transform: translate(0, -0.3em); }
+  30% {
+    transform: translate(0, 0.3em); }
+  100% {
+    transform: translate(0, -0.3em); } }
 @media (max-width: 35em) {
   .page-header {
     padding-bottom: 0; }
