@@ -246,7 +246,11 @@ input, textarea {
 
 @media (max-width: 35em) {
   body {
-    background-image: url("/nombler-public/img/city_background_small.jpeg"); } }
+    background-image: url("/nombler-public/img/city_background_small.jpeg"); }
+
+  .pac-container {
+    position: fixed !important;
+    top: 36.5em !important; } }
 @media (min-width: 35em) {
   body {
     background-image: url("/nombler-public/img/city_background_large.jpeg"); } }
