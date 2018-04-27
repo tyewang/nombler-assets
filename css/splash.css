@@ -9,12 +9,13 @@
   .page-header .navlinks {
     position: relative;
     margin-left: auto; }
+    .page-header .navlinks a, .page-header .navlinks .search-container {
+      margin-left: 0.75em;
+      margin-right: 0.75em; }
     .page-header .navlinks a {
       font-weight: bold;
       color: white;
-      text-decoration: none;
-      margin-left: 0.75em;
-      margin-right: 0.75em; }
+      text-decoration: none; }
       .page-header .navlinks a:hover {
         color: lightgray; }
     .page-header .navlinks .signup {
