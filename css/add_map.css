@@ -223,8 +223,7 @@ body {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: baseline;
-    height: auto;
-    margin-top: 0; }
+    min-height: 4em; }
     .page-footer .legal a:first-child {
       margin-left: 0; }
     .page-footer .social {
