@@ -155,7 +155,13 @@
     .navlinks .divider {
       display: none; }
     .navlinks a {
-      margin-bottom: 0.5em; } }
+      margin-bottom: 0.5em; }
+
+  .search-container {
+    margin-bottom: 0.5em; }
+
+  .search-label {
+    top: 0; } }
 .homepage-hero-module {
   border-right: none;
   border-left: none;

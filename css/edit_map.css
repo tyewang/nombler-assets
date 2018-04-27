@@ -183,7 +183,13 @@ body {
     .navlinks .divider {
       display: none; }
     .navlinks a {
-      margin-bottom: 0.5em; } }
+      margin-bottom: 0.5em; }
+
+  .search-container {
+    margin-bottom: 0.5em; }
+
+  .search-label {
+    top: 0; } }
 .page-footer {
   font-family: 'Fira Sans';
   color: white;
