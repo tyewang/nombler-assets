@@ -253,7 +253,7 @@ label {
   width: 5em;
   height: 5em; }
   #profile-photo-label object {
-    background-color: black; }
+    background-color: transparent; }
   #profile-photo-label object, #profile-photo-label img {
     object-position: center;
     object-fit: cover;
