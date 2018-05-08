@@ -474,7 +474,6 @@ a.with-notification-badge:after {
     font-size: 80%; }
 
 .follow-widget-container {
-  width: 9em;
   min-width: 9em;
   display: flex;
   justify-content: center;
@@ -482,7 +481,6 @@ a.with-notification-badge:after {
 
 .map-feed-item {
   margin-bottom: 0;
-  width: 9em;
   min-width: 9em;
   height: 9em;
   color: inherit;
