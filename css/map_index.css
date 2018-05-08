@@ -428,6 +428,8 @@ a.with-notification-badge:after {
     align-items: center;
     border-bottom: 1px solid lightgray; }
     .feed-container .feed-item .profile-photo {
+      width: 5em;
+      border-radius: 50%;
       margin: 1em 2em 1em 2em; }
     .feed-container .feed-item .profile-photo, .feed-container .feed-item .profile-photo > * {
       object-position: center;
