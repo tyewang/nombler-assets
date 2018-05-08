@@ -442,8 +442,7 @@ a.with-notification-badge:after {
 
 .username, .map-link {
   font-weight: bold;
-  color: black;
-  font-size: 120%; }
+  color: black; }
   .username:hover, .map-link:hover {
     color: gray; }
 
@@ -475,17 +474,15 @@ a.with-notification-badge:after {
     font-size: 80%; }
 
 .follow-widget-container {
-  width: 20%;
-  min-width: 8em;
+  width: 9em;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .map-feed-item {
   margin-bottom: 0;
-  width: 18%;
-  min-width: 8em;
-  min-height: 8em;
+  width: 9em;
+  height: 9em;
   color: inherit;
   display: block;
   position: relative;
