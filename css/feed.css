@@ -88,7 +88,9 @@
 
 .quote {
   margin-top: 0.5em;
-  color: #646464; }
+  color: #646464;
+  overflow-wrap: break-word;
+  word-break: break-all; }
   .quote:before {
     content: "\f10d";
     font-family: FontAwesome;
