@@ -278,12 +278,15 @@ body {
     color: rgba(100, 100, 100, 0.3); } }
 .nudge {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 1em;
   right: 0;
   font-size: 120%;
   font-weight: bold;
   border-radius: 4px 0 0 4px;
-  padding: 1em;
+  padding: 0.5em;
+  padding-right: 1em;
   width: 10em;
   background-color: rgba(240, 84, 110, 0.8);
   color: white;
@@ -292,6 +295,8 @@ body {
   z-index: 1; }
   .nudge a {
     color: white; }
+  .nudge .btn {
+    margin-top: 0.2em; }
 
 .goaway {
   opacity: 0;
