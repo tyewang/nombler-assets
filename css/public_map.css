@@ -242,11 +242,10 @@ body {
 
 .title .fa {
   font-size: 80%;
-  color: indianred; }
+  color: indianred;
+  vertical-align: 0.1em; }
   .title .fa:hover {
     color: #d98383; }
-.title .fa-heart-o {
-  color: rgba(100, 100, 100, 0.3); }
 .title .bounce {
   animation: 5s bounce 1s infinite;
   transition: transform; }
@@ -262,9 +261,6 @@ body {
 .byline img {
   border: 2px solid black;
   background-color: #969696; }
-
-#follow-heart-link {
-  color: rgba(100, 100, 100, 0.3); }
 
 @keyframes bounce {
   0%, 10%, 20%, 30% {
