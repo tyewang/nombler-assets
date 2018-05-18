@@ -1,36 +1,57 @@
+.page-header .navlinks .signup {
+  color: #1998f5;
+  background-color: white;
+  height: 1.5em;
+  padding: 0.25em 2em 0.25em 2em;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  font-weight: bolder;
+  font-family: 'Poppins';
+  text-decoration: none;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.3); }
+  .page-header .navlinks .signup:hover {
+    color: #1998f5;
+    box-shadow: 0 12px 8px -8px rgba(0, 0, 0, 0.5); }
+
 .page-header {
   margin-top: 0;
-  font-family: 'Fira Sans';
+  font-family: 'Poppins';
   box-sizing: border-box;
   width: 100%;
   padding: 1em 0 1em 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  border-bottom: none; }
   .page-header .navlinks {
     position: relative;
-    margin-left: auto; }
+    margin-left: auto;
+    display: flex;
+    align-items: center; }
+    .page-header .navlinks .divider {
+      position: relative; }
+      .page-header .navlinks .divider:after {
+        content: '';
+        top: -50%;
+        left: 50%;
+        position: absolute;
+        height: 200%;
+        width: 1px;
+        border-right: 1px solid lightgray; }
     .page-header .navlinks a {
       margin-left: 0.75em;
       margin-right: 0.75em;
-      font-weight: bold;
       color: white;
       text-decoration: none; }
       .page-header .navlinks a:hover {
         color: lightgray; }
-    .page-header .navlinks .signup {
-      color: #00cd00; }
 
 .nombler-logo {
-  font-family: 'Pacifico', cursive;
-  font-size: 300%;
-  color: white;
-  text-decoration: none; }
-  .nombler-logo:hover {
-    color: white;
-    text-decoration: none; }
-  .nombler-logo:focus {
-    color: white;
-    text-decoration: none; }
+  height: 1.5em; }
+  .nombler-logo img {
+    height: 1.5em; }
 
 #search {
   height: 2em;
@@ -60,8 +81,8 @@
 
 .search-label {
   position: absolute;
-  top: -50%;
-  right: 0.5em;
+  top: 0;
+  right: 0.2em;
   font-size: 1.5em;
   color: white; }
 
@@ -146,7 +167,7 @@
     transform: translate(0, -0.3em); } }
 @media (max-width: 35em) {
   .page-header {
-    padding-bottom: 0; }
+    padding: 1em; }
 
   .navlinks {
     display: flex;
@@ -234,7 +255,8 @@
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: baseline;
-    min-height: 4em; }
+    min-height: 4em;
+    height: auto; }
     .page-footer .legal a:first-child {
       margin-left: 0; }
     .page-footer .social {
