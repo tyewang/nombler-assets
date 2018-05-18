@@ -417,6 +417,9 @@
   background-color: #1998f5; }
 
 @media (max-width: 560px) {
+  .page-header {
+    padding: 1em; }
+
   .description:after {
     content: none; }
 
