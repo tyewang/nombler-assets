@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100%;
   font-weight: bolder;
   font-family: 'Poppins';
   text-decoration: none;
@@ -41,6 +40,7 @@
         width: 1px;
         border-right: 1px solid lightgray; }
     .page-header .navlinks a {
+      font-size: medium;
       margin-left: 0.75em;
       margin-right: 0.75em;
       color: white;
@@ -273,7 +273,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100%;
   font-weight: bolder;
   font-family: 'Poppins';
   text-decoration: none;
