@@ -285,23 +285,25 @@ ul.dropdown-menu {
     background-color: rgba(255, 255, 255, 0.3);
     color: white; }
 
-a.with-notification-badge:after {
-  content: '!';
-  display: block;
-  padding: 1px;
-  font-size: 80%;
-  position: absolute;
-  text-align: center;
-  top: -4px;
-  right: -2px;
-  height: 1.5em;
-  width: 1.5em;
-  border: 1px solid #fea400;
-  border-radius: 1.5em;
-  background-color: orange;
-  will-change: transform;
-  animation: 0.5s bounce;
-  animation-iteration-count: 2; }
+a.with-notification-badge {
+  position: relative; }
+  a.with-notification-badge:after {
+    content: '!';
+    display: block;
+    padding: 1px;
+    font-size: 80%;
+    position: absolute;
+    text-align: center;
+    top: -4px;
+    right: -1.3em;
+    height: 1.5em;
+    width: 1.5em;
+    border: 1px solid #fea400;
+    border-radius: 1.5em;
+    background-color: orange;
+    will-change: transform;
+    animation: 0.5s bounce;
+    animation-iteration-count: 2; }
 
 @keyframes bounce {
   0% {
